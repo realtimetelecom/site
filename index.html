@@ -6,7 +6,7 @@
     <meta name="description" content="Transforme sua empresa com soluções tecnológicas avançadas para eficiência máxima.">
     <title>RealTime Telecom RTT - Tecnologia para Resultados</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-   <style>
+    <style>
         /* Botão Flutuante do WhatsApp */
         .whatsapp-button {
             position: fixed;
@@ -72,55 +72,6 @@
 
         header nav a:hover {
             text-decoration: underline;
-        }
-
-        /* Seção Principal */
-        .hero {
-            background: url('site.jpeg') no-repeat center center/cover;
-            color: #fff;
-            padding: 60px 20px;
-            text-align: center;
-            position: relative;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 51, 102, 0.7);
-            z-index: 1;
-        }
-
-        .hero h2, .hero p, .hero .cta-button {
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        .hero .cta-button {
-            background-color: #00c853;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            font-weight: bold;
-        }
-
-        .hero .cta-button:hover {
-            background-color: #009624;
         }
 
         /* Soluções */
@@ -237,86 +188,97 @@
     <header>
         <h1>RealTime Telecom</h1>
         <nav>
-            <a href="#solutions">Soluções</a>
+            <a href="#telefonia">Telefonia</a>
+            <a href="#tecnologia">Tecnologia</a>
+            <a href="#armazenamento">Armazenamento</a>
+            <a href="#reducao-custos">Redução de Custos</a>
             <a href="#about">Sobre Nós</a>
             <a href="#contact">Contato</a>
         </nav>
     </header>
 
-    <!-- Seção Principal -->
-    <section class="hero">
-        <h2>Transforme sua Empresa</h2>
-        <p>Tecnologia para maior eficiência e resultados excepcionais.</p>
-        <a href="#solutions" class="cta-button">Descubra Nossas Soluções</a>
+    <!-- Telefonia -->
+    <section id="telefonia" class="solutions">
+        <h2>Telefonia</h2>
+        <div class="solutions-grid">
+            <div class="solution-item">
+                <i class="fas fa-cloud"></i>
+                <h3>PBX em Nuvem</h3>
+                <p>Modernize sua comunicação com sistemas PBX baseados em nuvem, oferecendo flexibilidade e integração com ferramentas corporativas.</p>
+            </div>
+            <div class="solution-item">
+                <i class="fas fa-phone"></i>
+                <h3>Troncos de Telefonia</h3>
+                <p>Conexões SIP de alta qualidade para garantir chamadas estáveis e econômicas em sua empresa.</p>
+            </div>
+            <div class="solution-item">
+                <i class="fas fa-network-wired"></i>
+                <h3>Instalação e Manutenção de PABX</h3>
+                <p>Especialistas em instalação e manutenção de sistemas PABX tradicionais e IP.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Soluções -->
-<section id="solutions" class="solutions">
-    <h2>Soluções Tecnológicas</h2>
-    <div class="solutions-grid">
-        <div class="solution-item">
-            <i class="fas fa-cloud"></i>
-            <h3>PBX em Nuvem</h3>
-            <p>Modernize sua comunicação com sistemas PBX baseados em nuvem, oferecendo flexibilidade e integração com ferramentas corporativas.</p>
+    <!-- Tecnologia -->
+    <section id="tecnologia" class="solutions">
+        <h2>Tecnologia</h2>
+        <div class="solutions-grid">
+            <div class="solution-item">
+                <i class="fas fa-chart-line"></i>
+                <h3>Monitoramento de TI com Zabbix</h3>
+                <p>Monitoramento avançado da sua infraestrutura de TI com alertas em tempo real para evitar falhas.</p>
+            </div>
+            <div class="solution-item">
+                <i class="fas fa-server"></i>
+                <h3>Instalação e Manutenção de Servidores</h3>
+                <p>Infraestrutura segura e otimizada para suportar as demandas da sua empresa.</p>
+            </div>
+            <div class="solution-item">
+                <i class="fas fa-network-wired"></i>
+                <h3>Instalação de Dispositivos de Rede</h3>
+                <p>Configuração de switches, roteadores Wi-Fi e outros dispositivos para garantir conectividade e desempenho da rede.</p>
+            </div>
         </div>
-        <div class="solution-item">
-            <i class="fas fa-phone"></i>
-            <h3>Troncos de Telefonia</h3>
-            <p>Conexões SIP de alta qualidade para garantir chamadas estáveis e econômicas em sua empresa.</p>
-        </div>
-        <div class="solution-item">
-            <i class="fas fa-chart-line"></i>
-            <h3>Monitoramento de TI com Zabbix</h3>
-            <p>Monitoramento avançado da sua infraestrutura de TI com alertas em tempo real para evitar falhas.</p>
-        </div>
-        <div class="solution-item">
-            <i class="fas fa-server"></i>
-            <h3>Instalação e Manutenção de Servidores</h3>
-            <p>Infraestrutura segura e otimizada para suportar as demandas da sua empresa.</p>
-        </div>
-        <div class="solution-item">
-            <i class="fas fa-users"></i>
-            <h3>Outsourcing de TI</h3>
-            <p>Terceirize a gestão de TI e concentre-se no que realmente importa.</p>
-        </div>
-        <div class="solution-item">
-            <i class="fas fa-network-wired"></i>
-            <h3>Instalação de Dispositivos de Rede</h3>
-            <p>Configuração de switches, roteadores Wi-Fi e outros dispositivos para garantir conectividade e desempenho da rede.</p>
-        </div>
-        <div class="solution-item">
-            <i class="fas fa-phone-alt"></i>
-            <h3>Consultoria para Redução de Custos de Telefonia</h3>
-            <p>Analisamos o uso atual da telefonia da sua empresa e identificamos soluções para otimizar custos, como planos mais adequados, tecnologia VoIP e melhorias na infraestrutura.</p>
-        </div>
-        <div class="solution-item">
-            <i class="fas fa-bolt"></i>
-            <h3>Consultoria para Redução de Custos de Energia</h3>
-            <p>Avaliamos o consumo de energia da sua empresa e implementamos estratégias para aumentar a eficiência energética.</p>
-        </div>
-        <div class="solution-item">
-            <i class="fas fa-wifi"></i>
-            <h3>Consultoria para Redução de Custos de Internet</h3>
-            <p>Identificamos formas de otimizar os gastos com internet, analisando planos contratados e necessidades reais da empresa.</p>
-        </div>
-        <div class="solution-item">
-            <i class="fas fa-network-wired"></i>
-            <h3>Instalação e Manutenção de PABX</h3>
-            <p>Especialistas em instalação e manutenção de sistemas PABX tradicionais e IP. Comunicação confiável e suporte técnico dedicado.</p>
-        </div>
-        <div class="solution-item">
-            <i class="fas fa-folder"></i>
-            <h3>Serviços de Armazenamento</h3>
-            <p>Armazenamento de arquivos e documentos com segurança e acesso rápido para atender às necessidades da sua empresa.</p>
-        </div>
-        <div class="solution-item">
-            <i class="fas fa-file-alt"></i>
-            <h3>Transformação Documental e Digitalização</h3>
-            <p>Modernize sua gestão de documentos com serviços de digitalização e organização eficiente.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
+    <!-- Armazenamento -->
+    <section id="armazenamento" class="solutions">
+        <h2>Armazenamento</h2>
+        <div class="solutions-grid">
+            <div class="solution-item">
+                <i class="fas fa-folder"></i>
+                <h3>Serviços de Armazenamento</h3>
+                <p>Armazenamento seguro de arquivos e documentos para atender às necessidades da sua empresa.</p>
+            </div>
+            <div class="solution-item">
+                <i class="fas fa-file-alt"></i>
+                <h3>Transformação Documental e Digitalização</h3>
+                <p>Digitalização e organização de documentos com gestão moderna e eficiente.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Redução de Custos -->
+    <section id="reducao-custos" class="solutions">
+        <h2>Redução de Custos</h2>
+        <div class="solutions-grid">
+            <div class="solution-item">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Consultoria para Redução de Custos de Telefonia</h3>
+                <p>Analisamos o uso atual da telefonia da sua empresa e identificamos soluções para otimizar custos.</p>
+            </div>
+            <div class="solution-item">
+                <i class="fas fa-bolt"></i>
+                <h3>Consultoria para Redução de Custos de Energia</h3>
+                <p>Avaliamos o consumo de energia e implementamos estratégias para aumentar a eficiência energética.</p>
+            </div>
+            <div class="solution-item">
+                <i class="fas fa-wifi"></i>
+                <h3>Consultoria para Redução de Custos de Internet</h3>
+                <p>Identificamos formas de otimizar os gastos com internet, analisando planos contratados.</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Sobre Nós -->
     <section id="about" class="about">
@@ -326,27 +288,28 @@
 
     <!-- Contato -->
     <section id="contact" class="contact">
-    <h2>Contato</h2>
-    <p><strong>Telefone:</strong> (91) 3197-7449</p>
-    <p><strong>Email:</strong> idiogolima@gmail.com</p>
-    <p><strong>Endereço:</strong> Belém, Pará</p>
-    <p><strong>Horário de Atendimento:</strong> Segunda a Sexta, das 9h às 18h</p>
-    <p>
-        <a href="https://wa.me/559131977449" target="_blank" style="color: #25D366; text-decoration: none; font-size: 1.2rem;">
-            <i class="fab fa-whatsapp" style="font-size: 1.5rem; margin-right: 8px;"></i>
-            Fale Conosco no WhatsApp
-        </a>
-    </p>
-</section>
+        <h2>Contato</h2>
+        <p><strong>Telefone:</strong> (91) 3197-7449</p>
+        <p><strong>Email:</strong> idiogolima@gmail.com</p>
+        <p><strong>Endereço:</strong> Belém, Pará</p>
+        <p><strong>Horário de Atendimento:</strong> Segunda a Sexta, das 9h às 18h</p>
+        <p>
+            <a href="https://wa.me/559131977449" target="_blank" style="color: #25D366; text-decoration: none; font-size: 1.2rem;">
+                <i class="fab fa-whatsapp" style="font-size: 1.5rem; margin-right: 8px;"></i>
+                Fale Conosco no WhatsApp
+            </a>
+        </p>
+    </section>
 
     <!-- Rodapé -->
     <footer>
         <p>&copy; 2024 RealTime Telecom. Todos os direitos reservados.</p>
     </footer>
-<!-- Botão Flutuante do WhatsApp -->
-<a href="https://wa.me/559131977449" target="_blank" class="whatsapp-button">
-    <i class="fab fa-whatsapp"></i>
-</a>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/559131977449" target="_blank" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
 </body>
 </html>

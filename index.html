@@ -59,6 +59,7 @@
             border-radius: 5px;
             font-size: 1rem;
             font-weight: bold;
+            cursor: pointer;
         }
 
         .hero .cta-button:hover {
@@ -124,6 +125,50 @@
             margin-bottom: 10px;
         }
 
+        #about, #contact {
+            padding: 40px 20px;
+            text-align: center;
+            background: #f9f9f9;
+        }
+
+        #about h2, #contact h2 {
+            color: #0055a5;
+            margin-bottom: 20px;
+        }
+
+        #contact p {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        #contact strong {
+            color: #003366;
+        }
+
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            font-size: 2rem;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
         @media (max-width: 768px) {
             .solutions-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -150,7 +195,7 @@
     <section class="hero">
         <h2>Transforme sua Empresa</h2>
         <p>Tecnologia para maior eficiência e resultados excepcionais.</p>
-        <a href="#categories" class="cta-button">Descubra Nossas Soluções</a>
+        <button class="cta-button" onclick="scrollToCategories()">Descubra Nossas Soluções</button>
     </section>
 
     <section id="categories" class="category-grid">
@@ -174,17 +219,17 @@
             <div class="solution-item">
                 <i class="fas fa-cloud"></i>
                 <h3>PBX em Nuvem</h3>
-                <p>Centralize todas as ligações da sua empresa de forma simples e eficaz. Com o PBX em nuvem, você pode realizar chamadas de qualquer lugar, basta ter uma conexão com a internet. Além disso, o sistema é fácil de usar, reduzindo custos operacionais e eliminando a necessidade de equipamentos físicos complicados.</p>
+                <p>Centralize suas ligações e reduza custos com um sistema moderno e acessível via internet.</p>
             </div>
             <div class="solution-item">
                 <i class="fas fa-phone"></i>
                 <h3>Troncos de Telefonia</h3>
-                <p>Conecte sua empresa ao mundo com chamadas de alta qualidade e baixo custo. Os troncos de telefonia oferecem estabilidade, reduzindo interrupções em suas ligações. Ideal para empresas que dependem de uma comunicação eficaz com clientes e fornecedores.</p>
+                <p>Conecte sua empresa ao mundo com chamadas de alta qualidade e custo reduzido.</p>
             </div>
             <div class="solution-item">
                 <i class="fas fa-network-wired"></i>
                 <h3>Instalação e Manutenção de PABX</h3>
-                <p>Garanta o funcionamento perfeito do seu sistema de comunicação interna. Oferecemos instalação, configuração e manutenção de sistemas PABX tradicionais e IP, permitindo que sua equipe colabore melhor e que os clientes sejam atendidos sem atrasos ou problemas técnicos.</p>
+                <p>Garanta uma comunicação interna eficaz com suporte especializado.</p>
             </div>
         </div>
     </section>
@@ -195,17 +240,17 @@
             <div class="solution-item">
                 <i class="fas fa-chart-line"></i>
                 <h3>Monitoramento de TI</h3>
-                <p>Proteja sua infraestrutura com monitoramento 24/7. Detecte problemas antes que eles afetem suas operações e receba alertas em tempo real. Nosso sistema identifica falhas, sobrecargas e outras vulnerabilidades, ajudando você a manter seus serviços online e operando com eficiência máxima.</p>
+                <p>Proteja sua infraestrutura com monitoramento 24/7 e evite falhas operacionais.</p>
             </div>
             <div class="solution-item">
                 <i class="fas fa-server"></i>
                 <h3>Servidores</h3>
-                <p>Implemente servidores seguros e de alta performance que atendam às necessidades da sua empresa. Desde o armazenamento de arquivos importantes até a execução de aplicativos essenciais, nossos servidores garantem estabilidade, segurança e rapidez.</p>
+                <p>Implemente servidores confiáveis para armazenamento e execução de sistemas.</p>
             </div>
             <div class="solution-item">
                 <i class="fas fa-network-wired"></i>
                 <h3>Dispositivos de Rede</h3>
-                <p>Melhore sua conectividade com os melhores dispositivos de rede. Configuramos e instalamos switches, roteadores Wi-Fi e outros equipamentos para garantir uma rede estável, rápida e preparada para o crescimento da sua empresa.</p>
+                <p>Configure switches e roteadores para redes rápidas e estáveis.</p>
             </div>
         </div>
     </section>
@@ -216,12 +261,12 @@
             <div class="solution-item">
                 <i class="fas fa-folder"></i>
                 <h3>Serviços de Armazenamento</h3>
-                <p>Organize e proteja todos os seus arquivos em um só lugar. Oferecemos soluções de armazenamento físico e digital para que você tenha acesso rápido e seguro às informações que sua empresa precisa, quando precisar.</p>
+                <p>Organize e proteja seus dados com soluções seguras e acessíveis.</p>
             </div>
             <div class="solution-item">
                 <i class="fas fa-file-alt"></i>
                 <h3>Transformação Documental</h3>
-                <p>Digitalize seus documentos antigos e otimize o espaço físico da sua empresa. Nossa solução inclui organização, digitalização e categorização de documentos, facilitando a busca e o acesso às informações.</p>
+                <p>Digitalize seus documentos e facilite o acesso rápido e eficiente a informações.</p>
             </div>
         </div>
     </section>
@@ -232,24 +277,47 @@
             <div class="solution-item">
                 <i class="fas fa-phone-alt"></i>
                 <h3>Telefonia</h3>
-                <p>Reduza suas despesas telefônicas analisando o plano ideal para sua empresa. Usamos tecnologias como VoIP para otimizar ligações, garantindo mais economia e eficiência na comunicação com clientes e parceiros.</p>
+                <p>Reduza gastos com telefonia ao otimizar seus planos e usar VoIP.</p>
             </div>
             <div class="solution-item">
                 <i class="fas fa-bolt"></i>
                 <h3>Energia</h3>
-                <p>Economize energia com estratégias práticas e eficientes. Realizamos análises completas no consumo de energia da sua empresa e identificamos maneiras de economizar sem prejudicar suas operações.</p>
+                <p>Economize energia com estratégias práticas e eficientes.</p>
             </div>
             <div class="solution-item">
                 <i class="fas fa-wifi"></i>
                 <h3>Internet</h3>
-                <p>Pague menos pela internet da sua empresa. Avaliamos suas necessidades de conexão e sugerimos os melhores planos e provedores, garantindo alta velocidade com o menor custo possível.</p>
+                <p>Reduza custos de internet com planos personalizados e análise de consumo.</p>
             </div>
         </div>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>Somos especialistas em soluções tecnológicas personalizadas, ajudando empresas a alcançarem seus objetivos com eficiência e inovação.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <p><strong>Telefone:</strong> (91) 3197-7449</p>
+        <p><strong>Email:</strong> idiogolima@gmail.com</p>
+        <p><strong>Endereço:</strong> Belém, Pará</p>
+        <p><strong>Horário de Atendimento:</strong> Segunda a Sexta, das 9h às 18h</p>
+        <p>
+            <a href="https://wa.me/559131977449" target="_blank" style="color: #25D366; text-decoration: none; font-size: 1.2rem;">
+                <i class="fab fa-whatsapp" style="font-size: 1.5rem; margin-right: 8px;"></i>
+                Fale Conosco no WhatsApp
+            </a>
+        </p>
     </section>
 
     <footer>
         <p>&copy; 2024 RealTime Telecom. Todos os direitos reservados.</p>
     </footer>
+
+    <a href="https://wa.me/559131977449" target="_blank" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script>
         function showSolutions(category) {
@@ -257,6 +325,10 @@
                 section.style.display = 'none';
             });
             document.getElementById(category).style.display = 'block';
+        }
+
+        function scrollToCategories() {
+            document.getElementById('categories').scrollIntoView({ behavior: 'smooth' });
         }
     </script>
 </body>

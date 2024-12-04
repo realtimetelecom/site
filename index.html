@@ -122,50 +122,24 @@
             background-color: #009624;
         }
 
-        /* Seção de Soluções */
-        .solutions {
-            padding: 40px 20px;
-            text-align: center;
-        }
+   /* Soluções - Layout ajustado */
+    .solutions-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
 
-        .solutions h2 {
-            font-size: 2rem;
-            color: #0055a5;
-            margin-bottom: 20px;
-        }
-
+    @media (max-width: 768px) {
         .solutions-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+            grid-template-columns: repeat(2, 1fr);
         }
+    }
 
-        .solution-item {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            flex: 0 1 calc(50% - 20px);
-            box-sizing: border-box;
-            text-align: center;
+    @media (max-width: 480px) {
+        .solutions-grid {
+            grid-template-columns: 1fr;
         }
-
-        .solution-item i {
-            font-size: 2rem;
-            color: #0055a5;
-            margin-bottom: 10px;
-        }
-
-        .solution-item h3 {
-            font-size: 1.5rem;
-            color: #333;
-        }
-
-        .solution-item p {
-            font-size: 1rem;
-            color: #555;
-        }
+    }
 
         /* Sobre Nós */
         .about {
@@ -247,41 +221,72 @@
     </section>
 
     <!-- Soluções -->
-    <section id="solutions" class="solutions">
-        <h2>Soluções Tecnológicas</h2>
-        <div class="solutions-grid">
-            <div class="solution-item">
-                <i class="fas fa-cloud"></i>
-                <h3>PBX em Nuvem</h3>
-                <p>Modernize sua comunicação com sistemas PBX baseados em nuvem, oferecendo flexibilidade e integração com ferramentas corporativas.</p>
-            </div>
-            <div class="solution-item">
-                <i class="fas fa-phone"></i>
-                <h3>Troncos de Telefonia</h3>
-                <p>Conexões SIP de alta qualidade para garantir chamadas estáveis e econômicas em sua empresa.</p>
-            </div>
-            <div class="solution-item">
-                <i class="fas fa-chart-line"></i>
-                <h3>Monitoramento de TI com Zabbix</h3>
-                <p>Monitoramento avançado da sua infraestrutura de TI com alertas em tempo real para evitar falhas.</p>
-            </div>
-            <div class="solution-item">
-                <i class="fas fa-server"></i>
-                <h3>Instalação e Manutenção de Servidores</h3>
-                <p>Infraestrutura segura e otimizada para suportar as demandas da sua empresa.</p>
-            </div>
-            <div class="solution-item">
-                <i class="fas fa-users"></i>
-                <h3>Outsourcing de TI</h3>
-                <p>Terceirize a gestão de TI e concentre-se no que realmente importa.</p>
-            </div>
-            <div class="solution-item">
-                <i class="fas fa-dollar-sign"></i>
-                <h3>Consultoria para Redução de Custos</h3>
-                <p>Economize em telefonia, internet e energia com estratégias personalizadas e inovadoras.</p>
-            </div>
+<section id="solutions" class="solutions">
+    <h2>Soluções Tecnológicas</h2>
+    <div class="solutions-grid">
+        <div class="solution-item">
+            <i class="fas fa-cloud"></i>
+            <h3>PBX em Nuvem</h3>
+            <p>Modernize sua comunicação com sistemas PBX baseados em nuvem, oferecendo flexibilidade e integração com ferramentas corporativas.</p>
         </div>
-    </section>
+        <div class="solution-item">
+            <i class="fas fa-phone"></i>
+            <h3>Troncos de Telefonia</h3>
+            <p>Conexões SIP de alta qualidade para garantir chamadas estáveis e econômicas em sua empresa.</p>
+        </div>
+        <div class="solution-item">
+            <i class="fas fa-chart-line"></i>
+            <h3>Monitoramento de TI com Zabbix</h3>
+            <p>Monitoramento avançado da sua infraestrutura de TI com alertas em tempo real para evitar falhas.</p>
+        </div>
+        <div class="solution-item">
+            <i class="fas fa-server"></i>
+            <h3>Instalação e Manutenção de Servidores</h3>
+            <p>Infraestrutura segura e otimizada para suportar as demandas da sua empresa.</p>
+        </div>
+        <div class="solution-item">
+            <i class="fas fa-users"></i>
+            <h3>Outsourcing de TI</h3>
+            <p>Terceirize a gestão de TI e concentre-se no que realmente importa.</p>
+        </div>
+        <div class="solution-item">
+            <i class="fas fa-network-wired"></i>
+            <h3>Instalação de Dispositivos de Rede</h3>
+            <p>Configuração de switches, roteadores Wi-Fi e outros dispositivos para garantir conectividade e desempenho da rede.</p>
+        </div>
+        <div class="solution-item">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Consultoria para Redução de Custos de Telefonia</h3>
+            <p>Analisamos o uso atual da telefonia da sua empresa e identificamos soluções para otimizar custos, como planos mais adequados, tecnologia VoIP e melhorias na infraestrutura.</p>
+        </div>
+        <div class="solution-item">
+            <i class="fas fa-bolt"></i>
+            <h3>Consultoria para Redução de Custos de Energia</h3>
+            <p>Avaliamos o consumo de energia da sua empresa e implementamos estratégias para aumentar a eficiência energética.</p>
+        </div>
+        <div class="solution-item">
+            <i class="fas fa-wifi"></i>
+            <h3>Consultoria para Redução de Custos de Internet</h3>
+            <p>Identificamos formas de otimizar os gastos com internet, analisando planos contratados e necessidades reais da empresa.</p>
+        </div>
+        <div class="solution-item">
+            <i class="fas fa-network-wired"></i>
+            <h3>Instalação e Manutenção de PABX</h3>
+            <p>Especialistas em instalação e manutenção de sistemas PABX tradicionais e IP. Comunicação confiável e suporte técnico dedicado.</p>
+        </div>
+        <div class="solution-item">
+            <i class="fas fa-folder"></i>
+            <h3>Serviços de Armazenamento</h3>
+            <p>Armazenamento de arquivos e documentos com segurança e acesso rápido para atender às necessidades da sua empresa.</p>
+        </div>
+        <div class="solution-item">
+            <i class="fas fa-file-alt"></i>
+            <h3>Transformação Documental e Digitalização</h3>
+            <p>Modernize sua gestão de documentos com serviços de digitalização e organização eficiente.</p>
+        </div>
+    </div>
+</section>
+
 
     <!-- Sobre Nós -->
     <section id="about" class="about">

@@ -134,39 +134,61 @@ header nav a:hover {
     margin-bottom: 10px;
 }
 
+/* SOBRE NÓS */
 #about {
     text-align: center;
     margin: 40px auto;
     max-width: 800px;
     padding: 20px;
-    background-color: #eef2f7; /* Fundo suave */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    background-color: #ffffff; /* Fundo branco */
+    border-left: 4px solid #0055a5; /* Destaque com borda azul */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
 #about h2 {
     font-size: 2rem;
     color: #0055a5;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-weight: bold;
 }
 
 #about p {
     font-size: 1.1rem;
     color: #333;
-    line-height: 1.8;
-    margin-bottom: 15px;
-    text-align: justify; /* Justifica o texto */
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: justify;
 }
 
+#about ul {
+    text-align: left;
+    margin: 20px auto;
+    padding-left: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+#about ul li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+#about ul li::before {
+    content: "✔";
+    color: #00c853;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* CONTATO */
 #contact {
     text-align: center;
     margin: 40px auto;
     max-width: 800px;
     padding: 20px;
-    background-color: #fff; /* Fundo branco */
+    background-color: #eef2f7;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #contact p {
@@ -175,6 +197,7 @@ header nav a:hover {
     color: #333;
 }
 
+/* RODAPÉ */
 footer {
     margin-top: 20px;
     padding: 15px;
@@ -189,6 +212,7 @@ footer p {
     margin: 0;
 }
 
+/* BOTÃO WHATSAPP */
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
@@ -213,6 +237,7 @@ footer p {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
     .category-grid {
         grid-template-columns: repeat(2, 1fr);

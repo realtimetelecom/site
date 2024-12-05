@@ -78,6 +78,7 @@ header nav a:hover {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin: 40px 20px;
+    justify-content: center;
 }
 
 .category-item {
@@ -103,6 +104,7 @@ header nav a:hover {
     display: none;
     padding: 20px;
     background-color: #eef2f7;
+    text-align: center;
 }
 
 .solutions h2 {
@@ -115,6 +117,7 @@ header nav a:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 20px;
+    justify-content: center;
 }
 
 .solution-item {
@@ -129,6 +132,29 @@ header nav a:hover {
     font-size: 2rem;
     color: #0055a5;
     margin-bottom: 10px;
+}
+
+#about, #contact, footer {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px; /* Limita a largura para uma leitura mais confortável */
+}
+
+#about p, #contact p {
+    line-height: 1.8; /* Melhora a legibilidade */
+}
+
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #003366;
+    color: white;
+    font-size: 0.9rem;
+    border-top: 2px solid #0055a5;
+}
+
+footer p {
+    margin: 0;
 }
 
 .whatsapp-button {
@@ -158,19 +184,29 @@ header nav a:hover {
 @media (max-width: 768px) {
     .category-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 
     .solutions-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    #about, #contact, footer {
+        padding: 10px;
     }
 }
 
 @media (max-width: 480px) {
     .category-grid {
         grid-template-columns: 1fr;
+        gap: 10px;
     }
 
     .solutions-grid {
         grid-template-columns: 1fr;
+    }
+
+    footer {
+        font-size: 0.8rem;
     }
 }

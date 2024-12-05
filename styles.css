@@ -295,24 +295,44 @@ footer p {
 #theme-toggle i {
     font-size: 1.5rem;
 }
+
+
+
+
 /* Estilos para o tema escuro */
 body.dark-theme {
-    background-color: #1e1e1e;
-    color: #f4f4f4;
+    background-color: #1e1e1e; /* Fundo escuro */
+    color: #f4f4f4; /* Texto claro */
 }
 
 body.dark-theme header {
     background-color: #333;
-    color: #f4f4f4;
+    color: #f4f4f4; /* Texto claro no cabeçalho */
 }
 
-body.dark-theme .category-item {
+body.dark-theme .category-item,
+body.dark-theme .solution-item {
     background-color: #2a2a2a;
-    color: #f4f4f4;
+    color: #f4f4f4; /* Texto claro nos itens */
     border: 2px solid #555;
 }
 
-body.dark-theme .solution-item {
+body.dark-theme #about,
+body.dark-theme #contact {
     background-color: #2a2a2a;
-    color: #f4f4f4;
+    color: #f4f4f4; /* Texto claro nas seções */
+    border-left-color: #00c853; /* Destaque de borda claro */
+}
+
+body.dark-theme footer {
+    background-color: #333;
+    color: #f4f4f4; /* Texto claro no rodapé */
+}
+
+body.dark-theme a {
+    color: #00c853; /* Links em verde claro para contraste */
+}
+
+body.dark-theme a:hover {
+    color: #00ff99; /* Links mais claros no hover */
 }

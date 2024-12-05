@@ -297,36 +297,38 @@ footer p {
 }
 
 
-
-
 /* Estilos para o tema escuro */
 body.dark-theme {
     background-color: #1e1e1e; /* Fundo escuro */
-    color: #f4f4f4; /* Texto claro */
+    color: #f4f4f4; /* Texto branco global */
+}
+
+body.dark-theme * {
+    color: #f4f4f4 !important; /* Força o texto branco em todos os elementos */
 }
 
 body.dark-theme header {
     background-color: #333;
-    color: #f4f4f4; /* Texto claro no cabeçalho */
+    color: #f4f4f4;
 }
 
 body.dark-theme .category-item,
 body.dark-theme .solution-item {
     background-color: #2a2a2a;
-    color: #f4f4f4; /* Texto claro nos itens */
+    color: #f4f4f4;
     border: 2px solid #555;
 }
 
 body.dark-theme #about,
 body.dark-theme #contact {
     background-color: #2a2a2a;
-    color: #f4f4f4; /* Texto claro nas seções */
-    border-left-color: #00c853; /* Destaque de borda claro */
+    color: #f4f4f4;
+    border-left-color: #00c853; /* Destaque com borda clara */
 }
 
 body.dark-theme footer {
     background-color: #333;
-    color: #f4f4f4; /* Texto claro no rodapé */
+    color: #f4f4f4;
 }
 
 body.dark-theme a {
@@ -334,5 +336,5 @@ body.dark-theme a {
 }
 
 body.dark-theme a:hover {
-    color: #00ff99; /* Links mais claros no hover */
+    color: #00ff99; /* Links mais claros ao passar o mouse */
 }

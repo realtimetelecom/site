@@ -5,192 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Transforme sua empresa com soluções tecnológicas avançadas para eficiência máxima.">
     <title>RealTime Telecom RTT - Tecnologia para Resultados</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f4f4f9;
-        }
-
-        header {
-            background: #003366;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-
-        header nav a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            background: url('site.jpeg') no-repeat center center/cover;
-            color: #fff;
-            padding: 60px 20px;
-            text-align: center;
-            position: relative;
-        }
-
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        .hero .cta-button {
-            background-color: #00c853;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .hero .cta-button:hover {
-            background-color: #009624;
-        }
-
-        .category-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            margin: 40px 20px;
-        }
-
-        .category-item {
-            background: #fff;
-            border: 2px solid #003366;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        .category-item:hover {
-            transform: scale(1.05);
-        }
-
-        .category-item h3 {
-            color: #003366;
-            margin: 0;
-        }
-
-        .solutions {
-            display: none;
-            padding: 20px;
-            background-color: #eef2f7;
-        }
-
-        .solutions h2 {
-            text-align: center;
-            color: #0055a5;
-        }
-
-        .solutions-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .solution-item {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .solution-item i {
-            font-size: 2rem;
-            color: #0055a5;
-            margin-bottom: 10px;
-        }
-
-        #about, #contact {
-            padding: 40px 20px;
-            text-align: center;
-            background: #f9f9f9;
-        }
-
-        #about h2, #contact h2 {
-            color: #0055a5;
-            margin-bottom: 20px;
-        }
-
-        #contact p {
-            margin-bottom: 10px;
-            font-size: 1.1rem;
-        }
-
-        #contact strong {
-            color: #003366;
-        }
-
-        .whatsapp-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25D366;
-            color: white;
-            font-size: 2rem;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-decoration: none;
-            z-index: 1000;
-            transition: transform 0.3s ease;
-        }
-
-        .whatsapp-button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        @media (max-width: 768px) {
-            .category-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .solutions-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .category-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .solutions-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
 <body>
 
+    <!-- Cabeçalho -->
     <header>
         <h1>RealTime Telecom</h1>
         <nav>
@@ -199,12 +19,16 @@
         </nav>
     </header>
 
+    <!-- Seção Hero -->
     <section class="hero">
-        <h2>Transforme sua Empresa</h2>
-        <p>Tecnologia para maior eficiência e resultados excepcionais.</p>
-        <button class="cta-button" onclick="scrollToCategories()">Descubra Nossas Soluções</button>
+        <div class="hero-content">
+            <h2>Transforme sua Empresa</h2>
+            <p>Tecnologia para maior eficiência e resultados excepcionais.</p>
+            <button class="cta-button" onclick="scrollToCategories()">Descubra Nossas Soluções</button>
+        </div>
     </section>
 
+    <!-- Categorias -->
     <section id="categories" class="category-grid">
         <div class="category-item" onclick="showSolutions('telefonia')">
             <h3>Telefonia</h3>
@@ -220,90 +44,112 @@
         </div>
     </section>
 
+    <!-- Telefonia -->
     <section id="telefonia" class="solutions">
         <h2>Telefonia</h2>
         <div class="solutions-grid">
             <div class="solution-item">
                 <i class="fas fa-cloud"></i>
                 <h3>PBX em Nuvem</h3>
-                <p>Centralize suas ligações e reduza custos com um sistema moderno e acessível via internet.</p>
+                <p>O PBX em nuvem é uma solução moderna que permite gerenciar todas as suas ligações sem a necessidade de hardware físico. 
+                Ideal para empresas com equipes remotas ou múltiplos escritórios, o sistema utiliza a internet para conectar chamadas de forma eficiente. 
+                Por exemplo, uma empresa de suporte técnico pode integrar seu PBX ao CRM, permitindo identificar clientes e histórico de chamadas em tempo real.</p>
             </div>
             <div class="solution-item">
                 <i class="fas fa-phone"></i>
                 <h3>Troncos de Telefonia</h3>
-                <p>Conecte sua empresa ao mundo com chamadas de alta qualidade e custo reduzido.</p>
+                <p>Os troncos de telefonia fornecem canais dedicados para chamadas internas e externas com alta qualidade e confiabilidade. 
+                Essa solução é ideal para empresas que precisam realizar um grande volume de chamadas. 
+                Um exemplo seria um call center que necessita de linhas estáveis para atender clientes sem interrupções.</p>
             </div>
             <div class="solution-item">
                 <i class="fas fa-network-wired"></i>
                 <h3>Instalação e Manutenção de PABX</h3>
-                <p>Garanta uma comunicação interna eficaz com suporte especializado.</p>
+                <p>Nossa equipe especializada cuida da instalação, configuração e manutenção de sistemas PABX, sejam eles tradicionais ou baseados em IP. 
+                Isso garante comunicação clara e eficiente entre seus departamentos. Por exemplo, hotéis utilizam PABX para gerenciar chamadas entre hóspedes e diferentes setores, como recepção e serviços de quarto.</p>
             </div>
         </div>
     </section>
 
+    <!-- Tecnologia -->
     <section id="tecnologia" class="solutions">
         <h2>Tecnologia</h2>
         <div class="solutions-grid">
             <div class="solution-item">
                 <i class="fas fa-chart-line"></i>
                 <h3>Monitoramento de TI</h3>
-                <p>Proteja sua infraestrutura com monitoramento 24/7 e evite falhas operacionais.</p>
+                <p>Com o monitoramento de TI, sua empresa pode identificar problemas antes que eles causem impactos. 
+                Usando ferramentas como Zabbix, monitoramos servidores, redes e dispositivos em tempo real. 
+                Por exemplo, uma loja online pode detectar falhas em seu site e garantir que os clientes tenham uma experiência de compra sem interrupções.</p>
             </div>
             <div class="solution-item">
                 <i class="fas fa-server"></i>
                 <h3>Servidores</h3>
-                <p>Implemente servidores confiáveis para armazenamento e execução de sistemas.</p>
+                <p>Oferecemos soluções completas para instalação e gerenciamento de servidores físicos e virtuais. 
+                Seja para armazenar dados ou hospedar aplicativos, nossos servidores são configurados para alta performance e segurança. 
+                Por exemplo, escritórios de advocacia podem armazenar documentos confidenciais de forma segura e acessível.</p>
             </div>
             <div class="solution-item">
                 <i class="fas fa-network-wired"></i>
                 <h3>Dispositivos de Rede</h3>
-                <p>Configure switches e roteadores para redes rápidas e estáveis.</p>
+                <p>Instalamos e configuramos dispositivos de rede, como switches e roteadores Wi-Fi, para garantir conectividade estável. 
+                Ideal para empresas que precisam de redes confiáveis para reuniões online e compartilhamento de arquivos. 
+                Por exemplo, escolas podem usar redes bem configuradas para aulas digitais sem interrupções.</p>
             </div>
         </div>
     </section>
 
+    <!-- Armazenamento -->
     <section id="armazenamento" class="solutions">
         <h2>Armazenamento</h2>
         <div class="solutions-grid">
             <div class="solution-item">
                 <i class="fas fa-folder"></i>
                 <h3>Serviços de Armazenamento</h3>
-                <p>Organize e proteja seus dados com soluções seguras e acessíveis.</p>
+                <p>Oferecemos soluções de armazenamento local e em nuvem para proteger seus dados. 
+                Por exemplo, uma empresa de design pode armazenar projetos grandes em servidores seguros, permitindo acesso rápido para toda a equipe.</p>
             </div>
             <div class="solution-item">
                 <i class="fas fa-file-alt"></i>
                 <h3>Transformação Documental</h3>
-                <p>Digitalize seus documentos e facilite o acesso rápido e eficiente a informações.</p>
+                <p>Digitalize documentos físicos para reduzir espaço ocupado e aumentar a eficiência. 
+                Por exemplo, clínicas médicas podem digitalizar prontuários de pacientes, garantindo acesso rápido e seguro às informações quando necessário.</p>
             </div>
         </div>
     </section>
 
+    <!-- Redução de Custos -->
     <section id="reducao-custos" class="solutions">
         <h2>Redução de Custos</h2>
         <div class="solutions-grid">
             <div class="solution-item">
                 <i class="fas fa-phone-alt"></i>
                 <h3>Telefonia</h3>
-                <p>Reduza gastos com telefonia ao otimizar seus planos e usar VoIP.</p>
+                <p>Reduza despesas com telefonia ao adotar tecnologias como VoIP. 
+                Por exemplo, empresas podem economizar até 50% nas contas de telefone ao migrar para chamadas pela internet.</p>
             </div>
             <div class="solution-item">
                 <i class="fas fa-bolt"></i>
                 <h3>Energia</h3>
-                <p>Economize energia com estratégias práticas e eficientes.</p>
+                <p>Avaliamos e otimizamos o consumo de energia para reduzir custos. 
+                Por exemplo, fábricas podem economizar utilizando equipamentos mais eficientes e sistemas de monitoramento.</p>
             </div>
             <div class="solution-item">
                 <i class="fas fa-wifi"></i>
                 <h3>Internet</h3>
-                <p>Reduza custos de internet com planos personalizados e análise de consumo.</p>
+                <p>Analisamos o uso da internet e sugerimos planos mais adequados para sua empresa. 
+                Um exemplo seria um coworking que precisa de internet de alta velocidade para atender múltiplos usuários ao mesmo tempo.</p>
             </div>
         </div>
     </section>
 
+    <!-- Sobre Nós -->
     <section id="about">
         <h2>Sobre Nós</h2>
         <p>Somos especialistas em soluções tecnológicas personalizadas, ajudando empresas a alcançarem seus objetivos com eficiência e inovação.</p>
     </section>
 
+    <!-- Contato -->
     <section id="contact">
         <h2>Contato</h2>
         <p><strong>Telefone:</strong> (91) 3197-7449</p>
@@ -318,25 +164,17 @@
         </p>
     </section>
 
+    <!-- Rodapé -->
     <footer>
         <p>&copy; 2024 RealTime Telecom. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Botão WhatsApp -->
     <a href="https://wa.me/559131977449" target="_blank" class="whatsapp-button">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <script>
-        function showSolutions(category) {
-            document.querySelectorAll('.solutions').forEach(section => {
-                section.style.display = 'none';
-            });
-            document.getElementById(category).style.display = 'block';
-        }
-
-        function scrollToCategories() {
-            document.getElementById('categories').scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
 </body>
 </html>

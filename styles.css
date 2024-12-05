@@ -269,3 +269,29 @@ footer p {
         padding: 10px;
     }
 }
+/* Estilização do botão de troca de tema */
+#theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #333;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0;
+}
+
+#theme-toggle i {
+    font-size: 1.5rem;
+}

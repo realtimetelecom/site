@@ -338,3 +338,18 @@ body.dark-theme a {
 body.dark-theme a:hover {
     color: #00ff99; /* Links mais claros ao passar o mouse */
 }
+
+
+/* Logomarca no cabeçalho */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    max-width: 150px; /* Ajuste o tamanho máximo */
+    height: auto; /* Mantém a proporção */
+    display: block;
+}

@@ -353,3 +353,21 @@ body.dark-theme a:hover {
     height: auto; /* Mantém a proporção */
     display: block;
 }
+
+
+.solution-item i {
+    font-size: 2.5rem; /* Ícones maiores para destaque */
+    color: #0055a5;
+    margin-bottom: 10px;
+}
+
+.solution-item p {
+    font-size: 1rem;
+    color: #333; /* Texto escuro no modo claro */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+/* Ajuste para o tema escuro */
+body.dark-theme .solution-item p {
+    color: #f4f4f4; /* Texto branco no modo escuro */
+}

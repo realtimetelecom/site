@@ -134,14 +134,45 @@ header nav a:hover {
     margin-bottom: 10px;
 }
 
-#about, #contact, footer {
+#about {
     text-align: center;
     margin: 40px auto;
-    max-width: 800px; /* Limita a largura para uma leitura mais confortável */
+    max-width: 800px;
+    padding: 20px;
+    background-color: #eef2f7; /* Fundo suave */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
 }
 
-#about p, #contact p {
-    line-height: 1.8; /* Melhora a legibilidade */
+#about h2 {
+    font-size: 2rem;
+    color: #0055a5;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify; /* Justifica o texto */
+}
+
+#contact {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff; /* Fundo branco */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
 }
 
 footer {
@@ -151,6 +182,7 @@ footer {
     color: white;
     font-size: 0.9rem;
     border-top: 2px solid #0055a5;
+    text-align: center;
 }
 
 footer p {
@@ -184,11 +216,12 @@ footer p {
 @media (max-width: 768px) {
     .category-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 15px;
     }
 
     .solutions-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 
     #about, #contact, footer {
@@ -208,5 +241,6 @@ footer p {
 
     footer {
         font-size: 0.8rem;
+        padding: 10px;
     }
 }
